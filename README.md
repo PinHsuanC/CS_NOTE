@@ -48,5 +48,22 @@ A:可用fn鍵+esc鍵，正常是esc鍵。**
 > * 將重複的資料進行統計記錄。
 
 
+* 需要在記憶體很小的機器（如小於 128MB）上解壓縮時，則選擇gzip格式。
+* 需要在很簡單、沒有什麼工具可用的機器解壓縮時，則選擇gzip格式。
+* 需要節省網路頻寬、縮短下載所需要的時間時，則選擇xz格式。
+* 需要有最好的壓縮率時，則選擇tar.xz格式。 
+ 
+* gzip
+> * 壓縮：gzip FileName
+> * 解壓縮：gunzip FileName.gz , gzip -d FileName.gz
+
+* xz  
+> * 壓縮：xz -z FileName  
+> * 解壓縮：xz -d FileName.xz
+
+* tar.gz
+> * 壓縮：tar -zcvf FileName.tar.gz DirName
+> * 解壓縮：tar -zxvf FileName.tar.gz
+
 
 
