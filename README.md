@@ -63,7 +63,49 @@ A:可用fn鍵+esc鍵，正常是esc鍵。**
 
 * tar.gz
 > * 壓縮：tar -zcvf FileName.tar.gz DirName
-> * 解壓縮：tar -zxvf FileName.tar.gz
+> * 解壓縮：tar -zxvf FileName.tar.gz  
+
+## Linux檔案搜尋  
+* find [path] [option] [action] filename  
+> * option  
+> -size EX：找出大於500M的檔案 → **-size +500M**  
+> -name EX：找出為照片的檔案 → **-name "*.jpg"**  
+> -type EX：**-type f → 一般檔案**;**-type d → 一般目錄**  
+> -user EX：同時找兩個擁有者的檔案 → **-user user1 -o -user user2**  
+>  * action - exec  
+>  -ls  
+>  -print  
+
+## Linux檔案內容查閱  
+### cat-從第一行顯示檔案內容、形成新檔案  
+> * cat -n file1 > file2→把file1的檔案內容加上行號後輸入file2檔案  
+>> * -n → 由1開始對所有輸出的行數編號  
+>> * ">" → 將多個文件覆蓋到目標文件中  
+>> * ">>" → 將多個文件追加到目標文件中
+
+### tac-從最後一行開始顯示  
+> * tac -r -s 'x\|[^x]' test.log → 一個接著一個字符的反轉一個文件   
+>> * -r → 將分隔符作為基礎正規表達處理  
+>> * -s → 使用**String**作為分隔符代替默認的換行符
+
+### more 一頁一頁的顯示檔案內容  
+> * more +20 testfile→從第20行開始顯示testfile的文檔內容  
+>> * ENTER：向下n行(default為1行)  
+>> * Ctrl+F/SPACE：向下滾動一屏  
+>> * Ctrl+B：返回上一屏
+
+### ess 與 more 類似，顯示檔案室允許用戶既可以向前又可以向後翻頁閱讀檔案  
+> * ps -ef |less→ps查看進程信息並通過less分頁顯示	   
+>> * j→下一行  
+>> * k→上一行  
+>> * G→移動到最後一行  
+>> * g→移動到第一行
+
+
+
+
+
+
 
 
 
