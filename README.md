@@ -131,6 +131,16 @@ A:可用fn鍵+esc鍵，正常是esc鍵。**
 > * 資料連結層data link layer  
 > * 實體層physical layer3
 
+## Linux網路相關  
+> * add : 新增一條路由規則   
+> * del : 刪除一條路由規則  
+> * -net : 目的地址是一個網路  
+> * -host : 目的地址是一個主機  
+> * target : 目的網路或主機  
+> * netmask : 目的地址的網路掩碼   
+> * gw : 路由資料包通過的閘道器  
+> * dev : 為路由指定的網路介面
+
 
 
 
