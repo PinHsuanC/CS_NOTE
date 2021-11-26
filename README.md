@@ -104,6 +104,34 @@ A:可用fn鍵+esc鍵，正常是esc鍵。**
 ### head/tail 只看頭/尾巴幾行
 > * head -n 20 state.txt | tail -10 → 顯示11~20行的內容
 
+## Port通訊埠 
+* Port通訊埠是什麼？有什麼用途？   
+> * 若將電腦比喻成郵局，**連接埠就像窗口，負責各種不同的業務**    
+> * 通訊埠是一種在電腦網路中藉由軟體所建立的服務   
+* 按Port號分佈劃分  
+> * 知名Port（Well-Known Ports）  
+> * 動態Port（Dynamic Ports） 
+* 按協議類型劃分  
+> * TCP   
+> * UDP   
+> * IP   
+> * ICMP（Internet控制消息協定）  
+
+## TCP/IP   
+* TCP/IP是什麼？  
+> * 指傳輸控制協議、網際網路互聯協議，又名網絡通訊協議，是**Internet最基本的協議**、**Internet國際網際網路的基礎**。
+> * 是供連接網際網路的計算機進行通信的**通信協議**  
+
+* TCP/IP依其功能不同分到四個階層之中（這四個模型常視為是簡化的七層OSI模型）
+> * 應用層application layer
+> * 表現層presentation layer  
+> * 會議層session layer  
+> * 傳輸層transport layer  
+> * 網路層network layer  
+> * 資料連結層data link layer  
+> * 實體層physical layer3
+
+
 
 
 
